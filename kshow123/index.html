@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Korean TV Shows Online | Kshow123</title>
+    <meta name="robots" content="nofollow, noindex, max-snippet:-1, max-video-preview:-1, max-image-preview:large"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="https://kshow123.tv/favicon.ico"/>
+    <style>
+    body {
+        margin: 0;
+        background: #161616;
+
+    }
+    a#logo {
+        position: fixed;
+        z-index: 1;
+        background: linear-gradient(90deg, #1b2229, #1b2229, transparent);
+        padding: 14.5px;
+        left: 160px;
+        min-width: 600px;
+    }
+
+    iframe#main-iframe {
+        width: calc(100vw - 320px);
+        height: 100vh;
+        display:block;
+        margin: auto;
+        position: fixed;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .banner-ngang {
+        position: fixed;
+        left: 50%;  
+        transform:translateX(-50%); 
+        bottom: 0;
+        z-index: 1;
+    }
+    .ngang-mobi{
+        display: none;
+    }
+    .banner-sidebar {
+        position: fixed;
+        left: 0;
+        top: 50%;
+        transform:translateY(-50%);
+    }
+    .banner-sidebar.banner-right {
+        right: 0;
+        left: auto;
+        padding-left: 17px;
+        background: #161616;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        /* border-top: solid 59px #020202; */
+        box-sizing: border-box;
+        width: 177px;
+        z-index: 1;
+        top: 0;
+        transform: inherit;
+    }
+    /*.banner-sidebar.banner-right:before {
+        content: "";
+        width: 100%;
+        height: 76px;
+        background: #33a5dc;
+        position: absolute;
+        top: 0;
+        z-index: 2;
+        left: 0;
+        }*/
+        .banner-sidebar.banner-right iframe {
+            z-index: 3;
+        }
+        @media only screen and (max-width: 1200px) {
+            a#logo {
+                background: linear-gradient(90deg, #1b2229, #1b2229, #1b2229, transparent);
+                min-width: 400px;
+            }
+        }
+
+        @media only screen and (max-width: 1000px) {
+            a#logo {
+                left: 0;
+                min-width: 460px;
+            }
+            iframe#main-iframe {
+                width: 100vw;
+            }
+            .banner-sidebar {
+                display: none!important;
+            }
+        }
+        @media only screen and (max-width: 728px) {
+
+            .banner-ngang {
+                display: none;
+            }
+            .ngang-mobi{
+                display: block;
+            }
+            .pc{
+                width: 120px;
+            }
+
+            a#logo {
+                height: 70px;
+                box-sizing: border-box;
+                display: flex;
+                align-items: center;
+                min-width: 0;
+            }
+        }
+
+        </style>
+        <!--<script type='text/javascript' src='//storystaffrings.com/77/81/41/778141ececc0e6169a74a68b0ac28b3e.js'></script>pop-up-->
+    </head>
+    <body>
+
+        <div class="banner-ngang banner_wrapper ngang-pc"> <!-- banner ngang cho PC -->
+      <script type="text/javascript"> atOptions = { 'key' : '99b5f81504b59448d72e1ae4ae00364a', 'format' : 'iframe', 'height' : 90, 'width' : 728, 'params' : {} }; </script> <script type="text/javascript" src="//direeyesightstray.com/99b5f81504b59448d72e1ae4ae00364a/invoke.js"></script>
+    </div>
+
+    <div class="banner-ngang banner_wrapper ngang-mobi"> <!-- banner ngang cho mobi -->
+<script type="text/javascript"> atOptions = { 'key' : 'b3a8f5a97aa46b8f680083c842e4385c', 'format' : 'iframe', 'height' : 50, 'width' : 320, 'params' : {} }; </script> <script type="text/javascript" src="//direeyesightstray.com/b3a8f5a97aa46b8f680083c842e4385c/invoke.js"></script>
+</div>
+
+
+<div class="banner-sidebar banner_wrapper banner-left"> <!-- banner dọc trái -->
+<script type="text/javascript"> atOptions = { 'key' : '5e4c2c3f62786899405a58ef4309a678', 'format' : 'iframe', 'height' : 300, 'width' : 160, 'params' : {} }; </script> <script type="text/javascript" src="//direeyesightstray.com/5e4c2c3f62786899405a58ef4309a678/invoke.js"></script>
+</div>
+
+<div class="banner-sidebar banner-right"> <!-- banner dọc phải -->
+<script type="text/javascript"> atOptions = { 'key' : '67ab827ed2e5ebc938a4f7bb78e661e1', 'format' : 'iframe', 'height' : 600, 'width' : 160, 'params' : {} }; </script> <script type="text/javascript" src="//direeyesightstray.com/67ab827ed2e5ebc938a4f7bb78e661e1/invoke.js"></script>
+
+</div>
+
+<iframe id="main-iframe" src="https://kshow123.tv/" frameborder="0"></iframe>
+
+
+<script>
+        // Lấy tất cả các phần tử có class là "banner_wrapper"
+        var bannerWrappers = document.querySelectorAll('.banner_wrapper');
+
+        // Duyệt qua từng phần tử và chèn nút X vào mỗi phần tử
+        bannerWrappers.forEach(function(bannerWrapper) {
+        // Tạo một phần tử button
+        var xButton = document.createElement('button');
+
+        // Thêm nội dung cho nút X (có thể thay đổi nếu bạn muốn)
+        xButton.innerHTML = '&times;';
+
+        // Tạo kiểu cho nút X để làm đẹp
+        xButton.style.position = 'absolute';
+        xButton.style.top = '0'; // Có thể điều chỉnh khoảng cách từ trên xuống
+        xButton.style.right = '0'; // Có thể điều chỉnh khoảng cách từ phải sang trái
+        xButton.style.padding = '0 5px'; // Có thể điều chỉnh kích thước nút
+        xButton.style.border = 'none';
+        xButton.style.backgroundColor = '#ffffff'; // Màu nền trắng
+        xButton.style.color = '#000'; // Màu chữ xanh đậm
+        xButton.style.fontWeight = 'bold';
+        xButton.style.fontSize = '25px'; // Cỡ chữ
+        xButton.style.lineHeight = '24px'; // line-height
+        xButton.style.cursor = 'pointer';
+        xButton.style.boxShadow = 'rgb(0, 0, 0) 0px 2px 4px';
+        xButton.style.borderRadius = '2px';
+        xButton.style.transition = 'background-color 0.3s'; // Hiệu ứng hoạt hình
+
+        // Tạm ẩn nút X và xuất hiện sau 3s
+        xButton.style.display = 'none';
+        setTimeout(function() {
+            xButton.style.display = 'block';
+        }, 3000);
+
+        // Hiệu ứng hoạt hình khi hover
+        xButton.addEventListener('mouseover', function() {
+        xButton.style.backgroundColor = '#e0e0e0'; // Màu nền xám nhạt
+    });
+
+        xButton.addEventListener('mouseout', function() {
+        xButton.style.backgroundColor = '#ffffff'; // Màu nền trắng
+    });
+
+        // Gán sự kiện click cho nút X để ẩn phần tử khi được nhấp
+        xButton.addEventListener('click', function() {
+        // Duyệt qua tất cả các phần tử có class "banner_wrapper" và ẩn chúng
+        bannerWrappers.forEach(function(banner) {
+            banner.style.display = 'none';
+        });
+    });
+
+        // Chèn nút X vào phần tử "banner_wrapper"
+        bannerWrapper.appendChild(xButton);
+    });
+</script>
+</body>
+</html>
+
+
