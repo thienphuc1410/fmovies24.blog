@@ -1,0 +1,86 @@
+body > iframe {
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+}
+
+body {
+    overflow: hidden;
+    margin: 0;
+    background:#202020;
+}
+
+.banner_wrapper {
+    position: fixed;
+    z-index: 5;
+}
+
+.banner-left { 
+    bottom: 0;
+}
+
+.banner-right {
+    right: 20px;
+    width: 160px;
+    bottom: 0;
+}
+
+.banner-ngang {
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+@media only screen and (max-width: 1500px) {
+    .banner-right,.banner-left {
+        display: none;
+    }
+}
+.ngang-mobi{
+    display: none;
+}
+@media only screen and (max-width: 728px) {
+
+    .ngang-pc {
+        display: none;
+    }
+    .ngang-mobi{
+        display: block;
+    }
+}
+     
+.header {
+    width: 160px;
+    height: 50px;
+    display: block;
+    margin: auto;
+    position: fixed;
+    left: calc(50vw);
+    transform: translateX(-508px);
+    z-index: 2;
+}
+
+.header a {
+    max-width: 1016px;
+    height: 50px;
+    display: block;
+    margin: 0 auto;
+}
+
+.logo {
+    z-index:9999; position:fixed; top:4px; border-radius: 2px;
+    display: flex;
+    width: 160px;
+    height: 42px;
+    padding: 3px;
+    padding-top: 6px;
+    justify-content: space-around;
+    box-sizing: border-box;
+}
+
+@media only screen and (max-width: 896px) {
+    .header {
+        left: calc(50vw - 80px);
+        transform: initial;
+    }
+}
