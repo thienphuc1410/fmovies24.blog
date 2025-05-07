@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>MoviesWill - Stream Free Movies & TV Shows</title>
+    <link rel="shortcut icon" href="https://titrov.pages.dev/images/favicon.png" type="image/x-icon">
+    <meta name="robots" content="nofollow, noindex, max-snippet:-1, max-video-preview:-1, max-image-preview:large"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script disable-devtool-auto src='https://cdn.jsdelivr.net/npm/disable-devtool/disable-devtool.min.js'></script>
+    <link rel="stylesheet" href="/styles.css">
+
+</head>
+<body>
+
+    <div class="banner-sidebar banner_wrapper banner-right"> 
+      <script type="text/javascript">
+      atOptions = {
+        'key' : '5069a87b61eba01ee9f47b1a5a6d3827',
+        'format' : 'iframe',
+        'height' : 300,
+        'width' : 160,
+        'params' : {}
+    };
+    </script>
+    <script type="text/javascript" src="//storystaffrings.com/5069a87b61eba01ee9f47b1a5a6d3827/invoke.js"></script>
+
+</div>
+
+<iframe id="main-iframe" src="https://freemovies.homes?logo=https://movieswill.com/oncima/logo.png&blog_name=MoviesWill" frameborder="0" allowfullscreen></iframe>
+
+<div class="banner-ngang banner_wrapper ngang-pc"> 
+  <script type="text/javascript">
+  atOptions = {
+    'key' : 'fd1b544741c6297e377c5cba82a1aa66',
+    'format' : 'iframe',
+    'height' : 90,
+    'width' : 728,
+    'params' : {}
+};
+</script>
+<script type="text/javascript" src="//storystaffrings.com/fd1b544741c6297e377c5cba82a1aa66/invoke.js"></script>
+</div>
+
+<div class="banner-ngang banner_wrapper ngang-mobi"> 
+
+  <script type="text/javascript">
+  atOptions = {
+    'key' : 'ad6f6c686c9d7a3b3618c4ee6c6802c9',
+    'format' : 'iframe',
+    'height' : 50,
+    'width' : 320,
+    'params' : {}
+};
+</script>
+<script type="text/javascript" src="//storystaffrings.com/ad6f6c686c9d7a3b3618c4ee6c6802c9/invoke.js"></script>
+
+</div>
+
+
+<div class="banner-sidebar banner_wrapper banner-left"> 
+   <script type="text/javascript">
+   atOptions = {
+    'key' : '703d9f37e3f358ae2ef15116d1ff3eb8',
+    'format' : 'iframe',
+    'height' : 600,
+    'width' : 160,
+    'params' : {}
+};
+</script>
+<script type="text/javascript" src="//storystaffrings.com/703d9f37e3f358ae2ef15116d1ff3eb8/invoke.js"></script>
+</div>
+
+<script>
+        
+        var bannerWrappers = document.querySelectorAll('.banner_wrapper');
+
+        
+        bannerWrappers.forEach(function(bannerWrapper) {
+        
+        var xButton = document.createElement('button');
+
+        
+        xButton.innerHTML = '&times;';
+
+        
+        xButton.style.position = 'absolute';
+        xButton.style.top = '-5px'; 
+        xButton.style.right = '-5px'; 
+        xButton.style.padding = '0 5px'; 
+        xButton.style.border = 'none';
+        xButton.style.backgroundColor = '#ffffff'; 
+        xButton.style.color = '#000'; 
+        xButton.style.fontWeight = 'bold';
+        xButton.style.fontSize = '25px'; 
+        xButton.style.lineHeight = '24px'; 
+        xButton.style.cursor = 'pointer';
+        xButton.style.boxShadow = 'rgb(0, 0, 0) 0px 2px 4px';
+        xButton.style.borderRadius = '2px';
+        xButton.style.transition = 'background-color 0.3s'; 
+
+        
+        xButton.style.display = 'none';
+        setTimeout(function() {
+            xButton.style.display = 'block';
+        }, 3000);
+
+        
+        xButton.addEventListener('mouseover', function() {
+        xButton.style.backgroundColor = '#e0e0e0'; 
+    });
+
+        xButton.addEventListener('mouseout', function() {
+        xButton.style.backgroundColor = '#ffffff'; 
+    });
+
+    
+    xButton.addEventListener('click', function() {
+    
+    var iframes = bannerWrapper.querySelectorAll('iframe');
+    iframes.forEach(function(iframe) {
+        iframe.style.display = 'none';
+    });
+
+    
+    xButton.style.display = 'none';
+});
+
+        
+        bannerWrapper.appendChild(xButton);
+    });
+</script>
+
+</body>
+</html>
+
+
